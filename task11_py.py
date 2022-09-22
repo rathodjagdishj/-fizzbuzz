@@ -7,17 +7,17 @@ Original file is located at
     https://colab.research.google.com/drive/1A6gxzBqhRdUseHcZr_MiqVY-IuYpCGy5
 """
 
-import pandas as pd
+import pandas as pd #used import statemnet 
 
 data = pd.read_csv("Trails.csv")
 
-import csv
+import csv # to import csv file
 good=[]
 poor=[]
 marginal=[]
 
 unknown=[]
-# Open file
+# to Open file
 with open('Trails.csv') as file_obj:
 
     reader_obj = csv.reader(file_obj)
@@ -36,13 +36,13 @@ with open('Trails.csv') as file_obj:
             print("got other value")
             print(row[9])
 
-print("List of good")
+print("List of good") # to print the values
 print(*good,sep='\n')
-print("list of poor")
+print("list of poor") # to print the poor
 print(*poor,sep='\n')
 
 
-print("List of marginal")
+print("List of marginal") # to print the list of margin
 print(*marginal,sep='\n')
 print("List of unknown")
 print(*unknown,sep='\n')
